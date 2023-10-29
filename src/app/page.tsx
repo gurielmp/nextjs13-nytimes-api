@@ -1,16 +1,12 @@
 import CardArticle from "@/components/CardArticle"
+import SearchArticle from "@/components/SearchArticle"
+import { getArticle } from "@/lib/nytimesAPI"
 
-export default function Home() {
+export default async function Home() {
+  const articleData = await getArticle()
   return (
     <>
-      <div className="form-control mb-5">
-        <input
-          type="text"
-          placeholder="Search"
-          className="input input-bordered w-24 md:w-auto"
-        />
-      </div>
-      <CardArticle articles={[]} />
+      <SearchArticle articleData={articleData} />
     </>
   )
 }
