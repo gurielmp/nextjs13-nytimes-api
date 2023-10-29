@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function NavBar() {
   return (
-    <div className="navbar bg-[#e1e7f4] mb-5">
+    <div className="navbar bg-[#f4f4f4] mb-5 shadow-lg">
       <Link href="/" className="btn btn-ghost normal-case text-xl">
         <Image
           src="/new-york-times-logo.png"
