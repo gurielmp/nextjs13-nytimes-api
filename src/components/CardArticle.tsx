@@ -1,8 +1,5 @@
 import Link from "next/link"
 
-interface ArticleDataProps {
-  articleData: any
-}
 export default function CardArticle({
   headline,
   author,
@@ -11,7 +8,7 @@ export default function CardArticle({
   url,
 }: any) {
   return (
-    <div className="card w-96 bg-[#e6edf0] text-black shadow-xl mt-5">
+    <div className="card bg-[#e6edf0] text-black shadow-xl mt-5">
       <div className="card-body">
         <Link
           href={url}
