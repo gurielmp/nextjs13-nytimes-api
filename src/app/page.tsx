@@ -1,4 +1,3 @@
-import CardArticle from "@/components/CardArticle"
 import SearchArticle from "@/components/SearchArticle"
 import { getArticle } from "@/lib/nytimesAPI"
 
